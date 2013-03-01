@@ -1,7 +1,7 @@
 /*
 VFW Project 3
 David Clark
-02/24/13
+03/02/13
 */
 
 window.addEventListener("DOMContentLoaded", function(){
@@ -60,9 +60,9 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 	function storeLoadout (key){
 		if(!key){
-			var keyGen					= Math.floor(Math.random()*100001);
+			var id					= Math.floor(Math.random()*100001);
 		}else{
-			id = key;
+			var id = key;
 		}
 		getGrenadeValue();
 		getFoodValue();
