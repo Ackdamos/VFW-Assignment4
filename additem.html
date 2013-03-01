@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="placeholder text" />
+		<meta name="keywords" content="html5, mobile development, visual frameworks, full sail university, dayz" />
+		<meta name="robots" content="index, follow" />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<meta name="viewport" content="target-densitydpi=device-dpi" />
+		
+		<title>DayZ Loadout Creator</title>
+		
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	
+	</head>
+	
+	<body>
+		<h1>DayZ Loadout Creator</h1>
+		
+		<nav>
+			<a href="#" id="clear">Clear Saved Loadouts</a>
+			<a class="displayLink" href="#" id="displayLink">Display Saved Loadouts</a>
+			<a href="additem.html" id="addNewLoadout" style="display:none;">Add New Loadout</a>
+		</nav>
+		</br>
+		<img class="imgcenter" src="images/dayz.png" alt="DayZ Logo" /></br>
+		
+		<form action="#" method="post" id="addGear">
+			
+			<ul id="errors"></ul>
+			<fieldset id="loadoutInformation">
+				<span>* are required fields</span>
+				<legend>Loadout Information</legend>
+					<ul>
+						<li><label for="name">*Loadout Creator:</li></label><input type="text" id="name" />
+						<li><label for="gearName">*Loadout Name:</li></label><input type="text" id="gearName" />
+						<li><label for="dateAdded">*Creation Date:</li></label><input type="date" id="dateAdded" />
+					</ul>
+			</fieldset>
+			
+			<fieldset id="gearSelection">
+				<legend>Gear Selection</legend>
+					<ul>
+						<li id='select'><label for="weaponChoices">*Choose a Weapon:</label><br /></li>
+					</ul>	
+
+				<ul>
+					<li>Magazine Quantity:</li>
+				</ul>
+				<ul>
+					<input type="range"  min="0" max="10" id="magAmount" />
+				</ul>
+		
+				<ul>
+					<li>Additional Items:</li>
+				</ul>		
+					<ul>
+						<input type="checkbox" value="Grenade" id="grenade" /><label for="grenade">Add Grenade</label></br>
+						<input type="checkbox" value="Food" id="food" /><label for="food">Add Food</label></br>
+						<input type="checkbox" value="Drink" id="drink" /><label for="drink">Add Drink</label></li><br>
+						<input type="checkbox" value="Medicine" id="medicine" /><label for="medicine">Add Medicine</label>
+					</ul>
+	 
+				<ul>	 
+					 <li><label for="comments">Comments:</label></li><textarea id="comments"></textarea>	
+				</ul>
+			
+				<ul>
+					<li><input type="hidden" value="true" /></li>
+				</ul>
+			
+			</fieldset>
+			
+			</br><input class="submitButton" type="submit" value="Save Gear Loadout" id="submit" />
+		</form>
+		
+		<script src="js/main.js" type="text/javascript"></script>
+		
+	</body>
+
+
+</html>

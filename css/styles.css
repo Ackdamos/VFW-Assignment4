@@ -1,0 +1,62 @@
+html {
+    background-color: white;
+}
+body {
+    font-family: "Helvetica Neue";
+    margin: 1.5em auto;
+    padding: 1.5em;
+    background-color: #EEEEEE;
+    color: #515151;
+    max-width: 35em;
+    border: 0.75em solid #515151;
+    line-height: 1.5em;
+}
+p {
+    font-family: "Helvetica Neue";
+    font-size-adjust : 100
+    margin: 1.5em 0;
+}
+h1 {
+    text-shadow: 0.1em 0.1em 0.2em #4F4F51;
+    background-color: #C2CBCE;
+    color: #515151;
+    font-size: 200%;
+    padding: 0.75em;
+    margin: -0.75em -0.75em 0.75em -0.75em;
+    text-align: center
+}
+h2 {
+    background-color: #4D4B39;
+    color: #88a75d;
+    font-size: 150%;
+    padding: 1em;
+    margin: -1em -1em 1em -1em;
+}
+h1 + h2 {
+    margin-top: -2em;
+    padding-top: 0;
+}
+
+.imgcenter {
+   display:block; 
+   margin:0 auto; 
+   text-align:center; 
+} 
+
+.displayLink {
+   display:block; 
+   margin:0 auto; 
+   float:right; 
+} 
+
+.submitButton {
+   display:block; 
+   margin:0 auto; 
+   text-align:center; 
+} 
+
+.getStarted {
+   display:block; 
+   margin:0 auto; 
+   text-align:center; 
+} 
