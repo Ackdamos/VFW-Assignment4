@@ -1,5 +1,5 @@
 /*
-VFW Project 3
+VFW Project 4
 David Clark
 03/02/13
 */
@@ -73,7 +73,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			loadout.gearName		= ["Loadout Name:", $('gearName').value];
 			loadout.dateAdded		= ["Creation Date:", $('dateAdded').value];
 			loadout.weaponChoices	= ["Weapon Choice:", $('weaponChoices').value];
-			loadout.magAmount		= ["Magazine Quanity:", $('magAmount').value];			
+			loadout.magAmount		= ["Magazine Quantity:", $('magAmount').value];			
 			loadout.grenade			= ["Grenade?", grenadeValue];
 			loadout.food			= ["Food?", foodValue];
 			loadout.drink			= ["Drink?", drinkValue];
