@@ -124,6 +124,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			var obj = JSON.parse(value);
 			var makeSubList = document.createElement('ul');
 			makeLi.appendChild(makeSubList);
+			getImage(obj.weaponChoices[1], makeSubList);
 			for(var n in obj){
 				var makeSubLi = document.createElement('li');
 				makeSubList.appendChild(makeSubLi);
@@ -133,6 +134,14 @@ window.addEventListener("DOMContentLoaded", function(){
 			}
 			makeItemLinks(localStorage.key(i), makeLinkLi);
 		}
+	}
+	
+	function getImage (catName, makeSubList){
+		var imageLi = document.createElement('li');
+		makeSubList.appendChild(imageLi);
+		var newImage = document.createElement('img');
+		var setSource = newImage.setAttribute("src", "images/"+ catName + ".png");
+		imageLi.appendChild(newImage);
 	}
 	
 	function addTestLoadouts (){
@@ -267,41 +276,40 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 	var weaponChoices = [
 		"--Select a Weapon--",
-		"Compound Crossbow",
+		"Crossbow",
 		"M1014",
-		"Remington 870",
-		"Double-barreled Shotgun",
-		"Winchester 1866",
-		"Bizon PP-19 SD",
+		"Remington",
+		"Double-barrel",
+		"Winchester",
+		"Bizon",
 		"MP5A5",
 		"MP5SD6",
 		"AK-74",
 		"AKS-74",
 		"AKS-74U",
-		"L85A2 AWS",
+		"L85A2",
 		"M4A1",
-		"M4A1 CCO",
-		"M4A1 CCO SD",
-		"M4A1 Holo",
-		"M4A3 CCO",
+		"M4A1_CCO",
+		"M4A1_CCO_SD",
+		"M4A1_Holo",
+		"M4A3_CCO",
 		"M16A2",
-		"M16A2 M203",
-		"M16A4 ACOG",
+		"M16A2_M203",
+		"M16A4_ACOG",
 		"AKM",
-		"Lee Enfield",
-		"FN FAL",
-		"FN FAL AN/PVS4",
-		"M249 SAW",
+		"Lee_Enfield",
+		"FN_FAL",
+		"FN_FAL_ANPVS4",
+		"M249_SAW",
 		"M240",
-		"Mk 48 Mod 0",
-		"CZ 550",
+		"Mk_48_Mod_0",
+		"CZ_550",
 		"DMR",
-		"M14 AIM",
+		"M14_AIM",
 		"M24",
-		"SVD Camo",
+		"SVD_Camo",
 		"M107",
 		"AS50",
-		"M136"
 	],
 		grenadeValue = "No",
 		foodValue = "No",
